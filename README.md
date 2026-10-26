@@ -260,7 +260,3 @@ Note: MIT requires keeping the copyright and license notice, **not** an academic
 ## Limitations
 
 The model was developed for a particular image type and staining workflow. It may not generalize to other stains, preparations, imaging systems, or datasets without further testing. Inspect predictions carefully and validate against expert annotations before quantitative scientific use.
-
----
-
-**Repository owner: before making this public**, complete [`PUBLISHING_CHECKLIST.md`](PUBLISHING_CHECKLIST.md). Fill in the weights download link, citation, and real example results, and test the commands with your real model.
