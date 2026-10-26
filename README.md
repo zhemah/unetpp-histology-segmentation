@@ -10,8 +10,6 @@ The model uses UNet++ with an EfficientNet-B0 encoder. You can **run it on new i
 
 ## What do the results look like?
 
-**Before making the repository public:** put three real, representative images in `examples/`, named `original.png`, `prediction.png`, and `overlay.png`. The code below is already prepared. Remove the `<!--` and `-->` lines to show the pictures on GitHub.
-
 
 | Original image | Model prediction |
 |---|---|
@@ -25,9 +23,25 @@ The model uses UNet++ with an EfficientNet-B0 encoder. You can **run it on new i
 
 You only need to set up the software **once**. After that, you can analyze new images by copying them into a folder and running **one command**. These instructions use **Anaconda**, which provides Python and helps keep the libraries for this project separate from other projects. You do not need any previous machine-learning experience.
 
-### Step 1. Download the repository
+### Step 1. Download the repository and reference image
 
-Click the green **Code** button at the top of this GitHub page, choose **Download ZIP**, and unzip it on your computer. Remember where you saved the extracted folder.
+Click the green **Code** button at the top of this GitHub page, select **Download ZIP**, and unzip the folder on your computer. Remember where you saved the extracted folder.
+
+**Download the normalization reference image**
+
+Before segmentation, the images are normalized using histogram matching to ensure more consistent staining and color characteristics.
+
+You can use the reference image provided with this model or choose your own. The reference image should be representative of your dataset, with similar staining intensity, background, and overall color distribution.
+
+We recommend using the provided reference image, as it was used during model development. Using a different reference image may affect segmentation performance.
+
+1. Download the [normalization reference image](https://github.com/zhemah/unetpp-histology-segmentation/releases/download/v1.0.0/normalization_reference.png).
+2. Save it inside the `reference` folder in your downloaded repository.
+3. Make sure the filename is `normalization_reference.png`.
+
+**Note:** If you choose to use your own reference image, save it in the same folder with the same filename, or update the reference image path in the normalization command. For reproducibility, use the same reference image when comparing results across images or experiments.
+
+**Important:** Do not resize, crop, or modify the reference image. Its original pixel values are needed for reproducible normalization.
 
 ### Step 2. Install Anaconda (once)
 
