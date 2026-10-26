@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this software or the trained model in your research, please cite this repository."
+title: "UNet++ for Histology Image Segmentation"
+type: software
+authors:
+  - family-names: "Herrera"
+    given-names: "Zabdi"
+    affiliation: "Emory National Primate Research Center, Emory University, Atlanta, GA 30329, USA"
+  - family-names: "Bossard"
+    given-names: "Emma Leigh M."
+    affiliation: "Emory National Primate Research Center, Emory University, Atlanta, GA 30329, USA"
+  - family-names: "Yendamuri"
+    given-names: "Rhea S."
+    affiliation: "Emory National Primate Research Center, Emory University, Atlanta, GA 30329, USA"
+  - family-names: "Galvan"
+    given-names: "Adriana"
+    affiliation: "Emory National Primate Research Center and Department of Neurology, School of Medicine, Emory University, Atlanta, GA 30329, USA"
+repository-code: "https://github.com/zhemah/unetpp-histology-segmentation"
+license: "MIT"

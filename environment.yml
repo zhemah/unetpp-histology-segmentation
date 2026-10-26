@@ -1,0 +1,8 @@
+# Create with: conda env create -f environment.yml
+# Then activate and install pip dependencies from requirements.txt (see README).
+name: unetpp-histology
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
